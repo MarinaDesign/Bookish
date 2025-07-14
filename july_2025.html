@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting"> 
+<meta name="color-scheme" content="light dark">
+<title>{{message.subject}}</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+</style>
+
+<style>            
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100% }
+    table { border-collapse: collapse !important; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+    p {margin: 0px !important; padding:0px !important;}
+    a:hover, a img:hover {cursor: pointer !important}
+    .cta-hover td:hover {opacity:0.8;}
+    .cta-hover a, .cta-hover{transition:all 0.3s ease;}
+    @media only screen and (min-width: 480px) {
+        .column-100 { width: 100% !important;max-width: 100% }
+      }
+
+    @media only screen and (max-width: 480px) {
+    .container { width: 100% !important; }
+    .container90 { width: 90% !important; margin:0 auto !important; }
+    div.column {display: block !important;width: 100% !important}
+    .m-img img { width: 100% !important; max-width: 100% !important; height: auto !important; }
+    .cta { min-width: 200px !important;}
+    .cta a { padding: 14px 20px !important; }
+    .pl-40 {padding-left:40px !important}
+    .px-20 {padding-left:20px !important; padding-right:20px !important;}
+    .pb-0 {padding-bottom:0px !important;}
+    .py-0 {padding-top:0px !important; padding-bottom:0px !important;}    
+    h3 { font-size:24px !important; line-height:24px !important}
+    .footer p, h4, li { font-size: 13px !important; line-height:20px !important;}
+    }
+    
+    @media (prefers-color-scheme: dark) { 
+        .dark-bg-body {background-color: #2f2f2f !important;}          
+        .dark-bg-main {background-color: #24241c !important;}          
+        .dark-bg-blue {background-color: #050245 !important;}  
+        .dark-bg-card {background-color: #202125 !important;}  
+        .dark-bg-cta {background-color: #1c1a4b!important;} 
+        .dark-bg-footer {background-color: #262626 !important;} 
+        .dark-text-light {color: #EBEBEB !important;}
+    }       
+</style>
+<!--[if mso]> <style>h1,h2,h3,h4,li,p,a { font-family: sans-serif !important; } </style> <![endif]-->
+<!--[if mso]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important; background-color:#efefef;">
+    <!-- Preheader Section -->
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+        &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+    </div>
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td class="dark-bg-body py-0" style="padding:20px 0;">
+                <table bgcolor="#ffffff" class="container" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; margin:0 auto">
+                    <!-- logo -->
+                    <tr>
+                        <td align="center" style="padding:0;">
+                            <a href="https://www.bookist.app/" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749582175306_loho_01JXDKJQMJ6FYWEC8E6EENXGDZ.png" alt="Bookist" width="600" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td class="dark-bg-main">
+                            <!--[if lte mso 15]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]-->
+                                
+                            <!-- main-->
+                            <table class="container" align="center" border="0" cellspacing="0" cellpadding="0" width="95%" style="margin:0 auto;">
+                                <tr>
+                                    <td style="padding:20px 20px 40px">
+                                        <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:18px; font-weight:400; line-height:26px; padding:0; margin:0; text-align:left">
+                                            Dear {{customer.first_name|default: "Reader"}},
+                                            <br><br>
+                                            We hope that as July settles in and we have passed the halfway mark in 2025 you are finding time to read - to finally explore books that have been on your Want-to-Read Shelf for ages or to explore some of the wonderful new books that are hitting the shelves every month. 
+                                            <br><br>
+                                            New authors, new books from favourite authors, new ideas explored by great minds and of course, great adventures to take you away from the frenzy of everyday life. At Bookist we are always trying to find new ways to introduce you to more books that you will love - we love the feedback from users on what works and where we need to work harder, so please keep telling us what you need from the Bookist App.
+                                            <br><br>
+                                            When we first started Bookist we knew a lot of the users personally, but now many of you are finding Bookist without any connection to the founders. We've started asking users how they got to hear about Bookist and the results have been fascinating: most new users find us by searching in the App Store, Play Store or in Google and then the rest come from our Instagram account or word of mouth recommendations. 
+                                            <br><br>
+                                            <strong>Enjoy the reading!</strong>
+                                            <br>
+                                            The Bookist Team
+                                        </p> 
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" style="background:#f6f6f6;">
+                                <tr>
+                                    <td class="dark-bg-footer">
+                                        <table class="container90" align="center" border="0" cellspacing="0" cellpadding="0" width="95%" style="margin:0 auto;">
+                                            <tr>
+                                                <td style="padding:30px 20px;">
+                                                    <h1 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:28px; font-weight:700; line-height:32px; padding:0; margin:0 0 10px; text-align:left">
+                                                        Please help us grow
+                                                    </h1>
+
+                                                    <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:18px; font-weight:400; line-height:26px; padding:0; margin:0; text-align:left">
+                                                        By giving us a rating in the <a class="dark-text-light" href="https://onlylinks.cc/MFeY" target="_blank" style="color:#252254; text-decoration:underline;">App Store</a> or <a class="dark-text-light" href="https://onlylinks.cc/BCYd" target="_blank" style="color:#252254; text-decoration:underline;">Play Store</a>, following us on <a class="dark-text-light" href="https://instagram.com/bookistapp" target="_blank" style="color:#252254; text-decoration:underline;">Instagram</a> @thebookistapp or by telling your book-loving friends about us! More Bookist users means more great book discoveries!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding:0 30px 30px;">
+                                                    <a href="https://instagram.com/bookistapp" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752532178420_insta_01K05GXPCM9M0Y5GWQ412KK85B.png" alt="" width="34" style="border:0; display:inline; height:auto; margin-left: 0;"></a>&nbsp;&nbsp;
+                                                    <a href="https://onlylinks.cc/MFeY" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752532176042_store_01K05GXM2BJDMWPR13G2WN920T.png" alt="" width="36" style="border:0; display:inline; height:auto; margin-left: 0;"></a>&nbsp;&nbsp;
+                                                    <a href="https://onlylinks.cc/BCYd" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752532177429_play-store_01K05GXNDNN0E9W57BZPFDE5K1.png" alt="" width="34" style="border:0; display:inline; height:auto; margin-left: 0;"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Card -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td class="dark-bg-blue" style="background:#252254; padding:0">
+                                        <table class="container" align="center" border="0" cellspacing="0" cellpadding="0" width="95%" style="margin:0 auto; max-width:580px;">
+                                            <tr>
+                                                <td style="padding:35px 10px 31px">
+                                                    <h2 class="dark-text-light" style="color:#ffffff; font-family:'Nunito Sans',sans-serif; font-size:30px; font-weight:700; line-height:36px; padding:0; margin:0; text-align:center">
+                                                        New books to discover in July
+                                                    </h2>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding:0 20px 40px">
+                                                    <p class="dark-text-light" style="color:#ffffff; font-family:'Nunito Sans',sans-serif; font-size:18px; font-weight:400; line-height:26px; padding:0; margin:0; text-align:center">
+                                                        We've added a Stack of books that are New in July with new books from <strong>Joyce Carol Oates</strong> (author of We Were the Mulvaneys and Blonde) and <strong>Silvia Moreno-Garcia</strong> (author of the bestselling American Gothic). There is a history of emojis (imagine the world before emojis!), or a cozy mystery from Elise Bryant to be solved by an unemployed, divorced mother suffering from ongoing panic attacks! Or perhaps you just need a really great dog story? 
+                                                    </p> 
+                                                </td>
+                                            </tr>  
+
+                                            <!-- card 1-2 -->
+                                            <tr>
+                                                <td style="font-size:0; line-height:0; padding:0">
+                                                <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="560"><tr><td valign="top" width="280"><![endif]-->
+                                                    <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                                        <div class="column-100" style="width:100%;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td style="padding:0 0 20px;">
+                                                                        <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                            <tr>
+                                                                                <td class="m-img" align="center" style="padding:25px 20px 0;">
+                                                                                    <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b5898793947" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752526858196_Fox-min_01K05BVAMV4SDS1B74VD1CS6M5.png" alt="" width="150" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>  
+                                                                                </td>
+                                                                            </tr>    
+                                                                            <tr>
+                                                                                <td style="padding:20px 20px 0">
+                                                                                    <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                                        Fox by Joyce <br>Carol Oates
+                                                                                    </h3>
+            
+                                                                                    <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                                        Gillian Flynn (author of Gone Girl) says 'Eerie, shocking, provoking, and beautifully written'...
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!-- cta -->
+                                                                            <tr>
+                                                                                <td align="center" style="padding:20px 0 30px">
+                                                                                    <table class="cta-hover" border="0" cellspacing="0" cellpadding="0">
+                                                                                        <tr>
+                                                                                            <td class="dark-bg-cta cta" style="background:#252254; border-radius:5px; font-family:'Nunito Sans',sans-serif; font-size:17px; font-weight: 600; line-height:100%; text-align:center; mso-padding-alt:15px 30px;">
+                                                                                                <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b5898793947" target="_blank" style="color:#ffffff; display:block; letter-spacing:0; padding:11px 30px; text-decoration:none;">View in App</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>                                                                 
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>   
+                                                    
+                                                    <!--[if (gte mso 9)|(IE)]></td><td valign="top" width="280"><![endif]-->
+                                                    <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                                        <div class="column-100" style="width:100%;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td style="padding:0 0 20px;">
+                                                                        <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                            <tr>
+                                                                                <td class="m-img" align="center" style="padding:25px 20px 0;">
+                                                                                    <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b5747872428" target="_blank" ><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752526859330_The-Bewitching-min_01K05BVBQ2KHHXCJ1V3TE398WY.png" alt="" width="150" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>    
+                                                                            <tr>
+                                                                                <td style="padding:20px 20px 0">
+                                                                                    <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                                        The Bewitching by Silvia Moreno-Garcia
+                                                                                    </h3>
+            
+                                                                                    <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                                        Three women in three different eras encounter danger and witchcraft in this eerie multigenerational horror saga.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!-- cta -->
+                                                                            <tr>
+                                                                                <td align="center" style="padding:20px 0 30px">
+                                                                                    <table class="cta-hover" border="0" cellspacing="0" cellpadding="0">
+                                                                                        <tr>
+                                                                                            <td class="dark-bg-cta cta" style="background:#252254; border-radius:5px; font-family:'Nunito Sans',sans-serif; font-size:17px; font-weight: 600; line-height:100%; text-align:center; mso-padding-alt:15px 30px;">
+                                                                                                <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b5747872428" target="_blank" style="color:#ffffff; display:block; letter-spacing:0; padding:11px 30px; text-decoration:none;">View in App</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>                                                                 
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>     
+                                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 3-4 -->
+                                            <tr>
+                                                <td style="font-size:0; line-height:0; padding:0;">
+                                                <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="560"><tr><td valign="top" width="280"><![endif]-->
+                                                    <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                                        <div class="column-100" style="width:100%;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td style="padding:0 0 20px;">
+                                                                        <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                            <tr>
+                                                                                <td class="m-img" align="center" style="padding:25px 20px 0;">
+                                                                                    <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b6996345182" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752526857007_Face-with-Tears-of-Joy-min_01K05BV9ENGFZ53Y7GHFT65C06.png" alt="" width="150" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>    
+                                                                            <tr>
+                                                                                <td style="padding:20px 20px 0">
+                                                                                    <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                                        Face With Tears of Joy by Keith Houston
+                                                                                    </h3>
+            
+                                                                                    <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                                        An exploration of the world's newest language - emojis. A vibrant exploration of the world's newest language...
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!-- cta -->
+                                                                            <tr>
+                                                                                <td align="center" style="padding:20px 0 30px">
+                                                                                    <table class="cta-hover" border="0" cellspacing="0" cellpadding="0">
+                                                                                        <tr>
+                                                                                            <td class="dark-bg-cta cta" style="background:#252254; border-radius:5px; font-family:'Nunito Sans',sans-serif; font-size:17px; font-weight: 600; line-height:100%; text-align:center; mso-padding-alt:15px 30px;">
+                                                                                                <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b6996345182" target="_blank" style="color:#ffffff; display:block; letter-spacing:0; padding:11px 30px; text-decoration:none;">View in App</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>                                                                 
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!--[if (gte mso 9)|(IE)]></td><td valign="top" width="280"><![endif]-->
+                                                    <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                                        <div class="column-100" style="width:100%;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td style="padding:0 0 20px;">
+                                                                        <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                            <tr>
+                                                                                <td class="m-img" align="center" style="padding:25px 20px 0;">
+                                                                                    <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b5377080381" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752526860669_The-Game-is-Afoot-min_01K05BVD0WAQ30ZXNJ6DC6BW2P.png" alt="" width="150" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>  
+                                                                                </td>
+                                                                            </tr>    
+                                                                            <tr>
+                                                                                <td style="padding:20px 20px 0">
+                                                                                    <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                                        The Game is Afoot by Elist Bryant
+                                                                                    </h3>
+            
+                                                                                    <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                                        A clever and hilarious mystery about a soccer mom who thinks she has to do everything, including solve a murder.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!-- cta -->
+                                                                            <tr>
+                                                                                <td align="center" style="padding:20px 0 30px">
+                                                                                    <table class="cta-hover" border="0" cellspacing="0" cellpadding="0">
+                                                                                        <tr>
+                                                                                            <td class="dark-bg-cta cta" style="background:#252254; border-radius:5px; font-family:'Nunito Sans',sans-serif; font-size:17px; font-weight: 600; line-height:100%; text-align:center; mso-padding-alt:15px 30px;">
+                                                                                                <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b5377080381" target="_blank" style="color:#ffffff; display:block; letter-spacing:0; padding:11px 30px; text-decoration:none;">View in App</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>                                                                 
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 5-6 -->
+                                            <tr>
+                                                <td style="font-size:0; line-height:0; padding: 0;">
+                                                <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="560"><tr><td valign="top" width="280"><![endif]-->
+                                                    <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                                        <div class="column-100" style="width:100%;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td style="padding:0 0 20px;">
+                                                                        <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                            <tr>
+                                                                                <td class="m-img" align="center" style="padding:25px 20px 0;">
+                                                                                    <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b6799227256" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752526862820_Ubac-and-Me-min_01K05BVF46EC08XHHQC23ZRH64.png" alt="" width="150" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>   
+                                                                                </td>
+                                                                            </tr>    
+                                                                            <tr>
+                                                                                <td style="padding:20px 20px 0" >
+                                                                                    <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                                        Ubac & Me by Cedric Sapin-Defour
+                                                                                    </h3>
+            
+                                                                                    <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                                        A tribute to the role dogs play in human lives, Ubac is a Bernese Mountain Dog who changes the life of his owner.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!-- cta -->
+                                                                            <tr>
+                                                                                <td align="center" style="padding:20px 0 30px">
+                                                                                    <table class="cta-hover" border="0" cellspacing="0" cellpadding="0">
+                                                                                        <tr>
+                                                                                            <td class="dark-bg-cta cta" style="background:#252254; border-radius:5px; font-family:'Nunito Sans',sans-serif; font-size:17px; font-weight: 600; line-height:100%; text-align:center; mso-padding-alt:15px 30px;">
+                                                                                                <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b6799227256" target="_blank" style="color:#ffffff; display:block; letter-spacing:0; padding:11px 30px; text-decoration:none;">View in App</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>                                                                 
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!--[if (gte mso 9)|(IE)]></td><td valign="top" width="280"><![endif]-->
+                                                    <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                                        <div class="column-100" style="width:100%;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td style="padding:0 0 20px;">
+                                                                        <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                            <tr>
+                                                                                <td class="m-img" align="center" style="padding:25px 20px 0;">
+                                                                                    <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b6656088918" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752526861780_The-View-from-Lake-Como-min_01K05BVE3NS68P0EE9SP6FJB1P.png" alt="" width="150" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>    
+                                                                            <tr>
+                                                                                <td class="pb-0" style="padding:20px 20px 0px;">
+                                                                                    <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                                        The View From Lake Como - Adriana Trigiani
+                                                                                    </h3>
+            
+                                                                                    <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                                        A big-hearted, hilarious novel about a woman determined to pursue her dreams before it is too late.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!-- cta -->
+                                                                            <tr>
+                                                                                <td align="center" style="padding:20px 0 30px">
+                                                                                    <table class="cta-hover" border="0" cellspacing="0" cellpadding="0">
+                                                                                        <tr>
+                                                                                            <td class="dark-bg-cta cta" style="background:#252254; border-radius:5px; font-family:'Nunito Sans',sans-serif; font-size:17px; font-weight: 600; line-height:100%; text-align:center; mso-padding-alt:15px 30px;">
+                                                                                                <a class="dark-text-light" href="https://www.bookist.app/a/book?bookFid=b6656088918" target="_blank" style="color:#ffffff; display:block; letter-spacing:0; padding:11px 30px; text-decoration:none;">View in App</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>                                                                 
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>                                                      
+                                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                </td>
+                                            </tr>
+
+                                            <!-- cta -->
+                                            <tr>
+                                                <td align="center" style="padding:20px 20px 50px">
+                                                    <table class="container cta-hover" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="dark-bg-cta cta" style="background:#ffffff; border-radius:5px; font-family:'Nunito Sans',sans-serif; font-size:17px; font-weight: 700; line-height:100%; text-align:center; mso-padding-alt:15px 30px;">
+                                                                <a class="dark-text-light" href="https://bookist.app/tabs/explore/stacks/new/322?stackId=322" target="_blank" style="color:#252254; display:block; letter-spacing:0; padding:15px 30px; text-decoration:none;">Browse the full stack of new releases</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>                                              
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding:30px 20px;">
+                                        <h1 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:28px; font-weight:700; line-height:32px; padding:0; margin:0; text-align:center">
+                                            Here are links to two more stacks our community has been loving:
+                                        </h1>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="font-size:0; line-height:0; padding: 0;">
+                                    <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="560"><tr><td valign="top" width="280"><![endif]-->
+                                        <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                            <div class="column-100" style="width:100%;">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding:0 0 20px;">
+                                                            <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                <tr>
+                                                                    <td class="m-img pl-40" align="center" style="padding:0 0 0 20px;">
+                                                                        <a class="dark-text-light" href="https://bookist.app/tabs/explore/stacks/new/118?stackId=118" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752530458944_Bookist-min_01K05F976EYN26FBTQY1PYHEQ5.png" alt="" width="220" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>   
+                                                                    </td>
+                                                                </tr>    
+                                                                <tr>
+                                                                    <td style="padding:10px 20px 20px" >
+                                                                        <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                            Thrillers 
+                                                                        </h3>
+
+                                                                        <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                            Find a spine-chilling book to make your own troubles fade into insignificance!
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                              
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <!--[if (gte mso 9)|(IE)]></td><td valign="top" width="280"><![endif]-->
+                                        <div class="column" style="display:table-cell; vertical-align:top; width:50%">  
+                                            <div class="column-100" style="width:100%;">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding:0 0 20px;">
+                                                            <table class="container90 dark-bg-card" align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="background:#ffffff; border-radius:16px; margin:0 auto;">
+                                                                <tr>
+                                                                    <td class="m-img pl-40" align="center" style="padding:0 0 0 20px;">
+                                                                        <a class="dark-text-light" href="https://bookist.app/tabs/explore/stacks/new/111?stackId=111" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-158992/1752528840658_Bookist%20(1)-min_01K05DQTT0YEK62VYVMH4XWNZT.png" alt="" width="220" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>
+                                                                    </td>
+                                                                </tr>    
+                                                                <tr>
+                                                                    <td class="pb-0" style="padding:10px 20px 20px;">
+                                                                        <h3 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:20px; font-weight:700; line-height:28px; padding:0 0 10px; margin:0; text-align:center">
+                                                                            Cozy Mysteries
+                                                                        </h3>
+
+                                                                        <p class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0; text-align:center">
+                                                                            If you prefer your suspense without the terror, try some of the books in this list.
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>                                                               
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>                                                      
+                                        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    </td>
+                                </tr>
+                            </table>                            
+
+                            <!-- Footer -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td class="dark-bg-footer" style="background:#f6f6f6;">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td class="m-img" align="center" style="padding:0 0 20px">
+                                                    <a href="https://www.bookist.app/" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749563163280_footer__logo_01JXD1EGYZJCGQ090H6SNYDM6Z.png" alt="Bookist" width="400" style="border:0; display:block; height: auto;"></a>
+                                                </td>                                                            
+                                            </tr>
+
+                                            <tr>
+                                                <td  style="padding:0 0 40px;">
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="80%" style="margin:0 auto; max-width:400px;">            
+                                                        <tr>
+                                                            <td align="center" width="40">
+                                                                <a href="https://www.instagram.com/thebookistapp" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749563162194_insta__logo_01JXD1EFX6DS2BAS7T5FQ5CNVG.png" alt="Bookist" width="40" style="border:0; display:block; height: auto;"></a>
+                                                            </td> 
+                                                            <td style="color:#001620; font-family:'Nunito Sans',sans-serif; font-size:14px; line-height:140%; letter-spacing:-0.1px; padding:0 20px;">
+                                                                <p class="dark-text-light">
+                                                                    Follow us on instagram <br>for our takes on the book world's latest releases
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="dark-bg-main" style="background:#efefef; padding:20px">
+                                        <h4 class="dark-text-light" style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; line-height:20px; padding:0; margin:0;text-align:center">
+                                            Copyright © {{ "now" | date: "%Y" }}  Bookist. All rights reserved. <br>
+                                            You can update <a href="{% manage_subscription_preferences_url %}" target="_blank" style="color:#001620; text-decoration: underline;"><span class="dark-text-light">your preferences</span></a> or <a href="{% unsubscribe_url %}" target="_blank" style="color:#001620; text-decoration: underline;"><span class="dark-text-light">unsubscribe from this list.</span></a> 
+                                        </h4> 
+                                    </td>
+                                </tr>                              
+                                
+                            </table>
+                            <!--[if lte mso 15]></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
