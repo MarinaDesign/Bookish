@@ -1,2 +1,2 @@
-# Bookish
-Bookish Project
+# Bookist
+Bookist Project
