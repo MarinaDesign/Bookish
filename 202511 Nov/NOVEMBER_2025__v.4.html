@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting"> 
+<!-- <title>{{message.subject}}</title> -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+</style>
+
+<style>            
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100% }
+    table { border-collapse: collapse !important; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+    p {margin: 0px !important; padding:0px !important;}
+    a:hover, a img:hover {cursor: pointer !important}
+    .cta-hover td:hover {opacity:0.8;}
+    .cta-hover a, .cta-hover{transition:all 0.3s ease;}
+    @media only screen and (min-width: 480px) {
+        .column-100 { width: 100% !important;max-width: 100% }
+      }
+
+    @media only screen and (max-width: 480px) {
+    .container { width: 100% !important; }
+    div.column {display: block !important;width: 100% !important}
+    .m-img img { width: 100% !important; max-width: 100% !important; height: auto !important; }
+    .cta { min-width: 260px !important;}
+    .cta a {font-size:15px !important; padding: 14px 20px !important; }
+    .px-20 {padding-left:20px !important; padding-right:20px !important;}
+    .pb-25 {padding-bottom:25px !important;}
+    .footer p, h4, li { font-size: 13px !important; line-height:20px !important;}
+    }
+
+</style>
+<!--[if mso]> <style>h1,h2,h3,h4,li,p,a { font-family: sans-serif !important; } </style> <![endif]-->
+<!--[if mso]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important; background-color:#efefef;">
+    <!-- Preheader Section -->
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+        &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+    </div>
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <table bgcolor="#ffffff" class="container" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; margin:0 auto">
+                    <tr>
+                        <td>
+                            <!--[if lte mso 15]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]-->
+                                
+                            <!-- logo -->
+                            <table class="container" align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="margin:0 auto;">
+                                <tr>
+                                    <td class="m-img" align="center" style="padding:0;">
+                                        <a href="https://www.bookist.app/" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749582175306_loho_01JXDKJQMJ6FYWEC8E6EENXGDZ.png" alt="Bookist" width="600" style="border:0; display:block; height:auto; max-width:100%; margin:0 auto;"></a>
+                                    </td>
+                                </tr>   
+                            </table>
+                            
+                            <!-- main-->
+                            <table class="container" align="center" border="0" cellspacing="0" cellpadding="0" width="95%" style="margin:0 auto;">
+                                <tr>
+                                    <td style="padding:20px 20px 30px">
+                                        
+                                        <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:18px; font-weight:400; line-height:26px; padding:0; margin:0 0 15px !important; text-align:left">
+                                            Dear {{customer.first_name|default: "Reader"}},
+                                            <br><br>
+                                            With Thanksgiving upon us, it's time to pause and reflect on the things we're grateful for. At Bookist we're are forever grateful to the authors and publishers of so many wonderful books that help keep us sane in an exceptionally crazy world! 
+                                            <br><br>
+                                            Books provide our escape, our entertainment, our education and  a reminder of how fascinating the world and its inhabitants can be. If you are also contemplating gratitude at the moment, visit our <a href="https://bookist.app/a/stacklist/s3948378337?link_id={% cio_link_id %}" class="untracked" target="_blank" style="color:#252254; font-weight:700">Giving Thanks</a> stack for some inspiration.
+                                            <br><br>
+                                            We're also excited to announce some new features in Bookist. If you visit your Profile tab, you'll see a link there to a <a href="https://bookist.app/tabs/profile?link_id={% cio_link_id %}" class="untracked" target="_blank" style="color:#252254; font-weight:700">My Stats</a> page with graphs and charts which track your reading history and habits, things like: 
+                                        </p>   
+
+                                        <ul style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:18px; font-weight:400; line-height:26px; font-style: italic; padding:0 0 0 17px; margin:0; text-align:left">
+                                            <li>how many books have you read this year?</li>
+                                            <li>what are your most-read genres? </li>
+                                            <li>who are your most-read authors?</li>
+                                        </ul>
+                                        
+                                        <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:18px; font-weight:400; line-height:26px; padding:0; margin:15px 0 0 !important; text-align:left">
+                                            Please give it a whirl and see what you think - feedback is always welcome.
+                                            <br><br>
+                                            And finally, we've picked a few new releases in November we think you'll like - see our recommendations below.
+                                            <br><br>
+                                            Happy reading!<br>
+                                            The Bookist Team
+                                        </p>
+
+                                    </td>
+                                </tr>
+                            </table>
+                           
+                            <!-- 3 Cards -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td style="background:#f6f6f6; padding:0">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td style="padding:35px 10px 20px">
+                                                    <h2 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:30px; font-weight:700; line-height:36px; padding:0; margin:0; text-align:center">
+                                                        Giving Thanks
+                                                    </h2>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 1 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 15px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#ffffff; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="pb-25" style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b5975125345?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763907071400_Celebrations-min_01KARGVWCN06XSGNJJ9RMNWYVA.png" alt="Celebrations" width="200" style="color:#000000; border:0; display:block; font:700 10px 'Nunito Sans',sans-serif; height:auto; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:0 10px">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                        Celebrations <br><span style="font-size:14px; font-style:italic; font-weight:400;">by Maya Angelou</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:5px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b5975125345?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Poetry</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Spirituality</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Inspirational</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding: 5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        Grace, dignity, and eloquence have long been hallmarks of Maya Angelou's poetry. Her measured verses have stirred our souls, energized our minds, and healed our hearts.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 2 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 15px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#ffffff; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b3427576389?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763907039810_love%20for%20imperfect%20things-min_01KARGTXHB59KK3AGJXV9ZAT0H.png" alt="Love for Imperfect Things" width="200" style="border:0; display:block; height:auto; color:#000000; font:700 10px 'Nunito Sans',sans-serif; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:15px 10px 0">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                        Love for Imperfect Things<br><span style="font-size:14px; font-style:italic; font-weight:400;">by Haemin Sunim</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:15px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b3427576389?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto;  margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Philosophy</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Psychology</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Self-Help</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding:5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        A book of spiritual wisdom about learning to love ourselves, with all our imperfections. When you care for yourself first, the world begins to find you worthy of care.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 3 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 45px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#ffffff; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="pb-25" style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b2491395042?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763907009603_Thanks-min_01KARGT01QHE8WC4D9E9WZ4X45.png" alt="Thanks!" width="200" style="color:#000000; border:0; display:block; font:700 10px 'Nunito Sans',sans-serif; height:auto; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:0 10px">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                        Thanks! <br><span style="font-size:14px; font-style:italic; font-weight:400;">By Robert A. Emmons</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:5px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b2491395042?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Business</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Science</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#f6f6f6; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Psychology</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding: 5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        A scientifically groundbreaking, eloquent look at how we benefit—psychologically, physically, and interpersonally—when we practice gratitude.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                      
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>                            
+                           
+                            <!-- 6 Cards -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td style="background:#252254; padding:0">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td style="padding:35px 10px 20px">
+                                                    <h2 style="color:#ffffff; font-family:'Nunito Sans',sans-serif; font-size:30px; font-weight:700; line-height:36px; padding:0; margin:0; text-align:center">
+                                                        New in November
+                                                    </h2>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 1 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 15px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#f6f6f6; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="pb-25" style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b0579197196?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763908036720_Future%20begins%20with%20Z-min_01KARHSB2R8Q0X3AQ4ZTMJJ6JV.png" alt="The Future Begins with Z" width="200" style="color:#000000; border:0; display:block; font:700 10px 'Nunito Sans',sans-serif; height:auto; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:0 10px">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                        The Future Begins with Z <br><span style="font-size:14px; font-style:italic; font-weight:400;">by Tim Elmore</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:5px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b0579197196?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Business</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Psychology</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding: 5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        What if your greatest challenge could become your greatest solution? Generation Z has entered the workforce and are challenging leaders in ways they have never experienced before.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 2 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 15px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#f6f6f6; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="pb-25" style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b7996993180?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763904902808_How%20to%20win%20the%20PL.jpg_01KARESPMRGDWGRM5EEMEXEJKK.png" alt="The Future Begins with Z" width="200" style="color:#000000; border:0; display:block; font:700 10px 'Nunito Sans',sans-serif; height:auto; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:0 10px">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                        How to Win the Premier League <br><span style="font-size:14px; font-style:italic; font-weight:400;">by Ian Graham</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:5px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b7996993180?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Sports</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Technology</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Football</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding: 5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        The insider account of the data revolution that has swept through the modern football world written by one of its key architects, Ian Graham. In a game that is increasingly dominated by an elite few, Graham charts a path for...
+
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 3 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 15px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#f6f6f6; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b1324169511?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763906952188_Predicament-min_01KARGR7YSKF6983HV5YZTD16T.png" alt="The Predicament" width="200" style="border:0; display:block; height:auto; color:#000000; font:700 10px 'Nunito Sans',sans-serif; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:15px 10px 0">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                       The Predicament <br><span style="font-size:14px; font-style:italic; font-weight:400;">by William Boyd</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:15px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b1324169511?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto;  margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Historical Fiction</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Thriller</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Espionage</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding:5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        A thrilling novel starring the travel writer-turned-reluctant spy Gabriel Dax, who finds himself implicated in a dangerous conspiracy with global consequences.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 4 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 15px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#f6f6f6; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="pb-25" style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b1146604922?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763906972599_we%20did%20ok%20kid-min_01KARGRVWNKJQJT751EBYDEKW5.png" alt="We Did OK, Kid" width="200" style="color:#000000; border:0; display:block; font:700 10px 'Nunito Sans',sans-serif; height:auto; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:0 10px">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                        We Did OK, Kid  <br><span style="font-size:14px; font-style:italic; font-weight:400;">by Anthony Hopkins</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:5px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b1146604922?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Non-fiction</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Memoir</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Film</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding: 5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        Academy Award-winning actor Sir Anthony Hopkins delves into his illustrious film and theater career, difficult childhood, and path to sobriety in his honest, moving, and long-awaited memoir.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 5 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 15px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#f6f6f6; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="pb-25" style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b5614352735?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763907377856_Land%20in%20winter-min_01KARH57MYQZ94D2JRXCP7W5FD.png" alt="The Land in Winter" width="200" style="color:#000000; border:0; display:block; font:700 10px 'Nunito Sans',sans-serif; height:auto; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:0 10px">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                       The Land in Winter <br><span style="font-size:14px; font-style:italic; font-weight:400;">by Andrew Miller</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:5px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b5614352735?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Historical Fiction</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">England</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Relationships</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding: 5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        A masterful, page-turning examination of the minutiae of life, and a masterclass in storytelling - proof yet again that Andrew Miller is one of Britain's most dazzling chroniclers of the human heart.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!-- card 6 -->
+                                            <tr>
+                                                <td align="center" style="padding:0 0 45px">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="90%" style="background:#f6f6f6; border-radius:16px">
+                                                        <tr>
+                                                            <td style="font-size:0; line-height:0; padding:0;">
+                                                            <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="520"><tr><td valign="middle" width="200"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:30%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="pb-25" style="padding:15px">
+                                                                                    <a href="https://www.bookist.app/a/book/b7229843072?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1763908587217_Philosopher%20in%20the%20valley-min_01KARJA4NNG01M75BDSN7PH6GG.png" alt="The Philosopher in the Valley" width="200" style="color:#000000; border:0; display:block; font:700 10px 'Nunito Sans',sans-serif; height:auto; width:100%; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>     
+
+                                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle" width="320"><![endif]-->
+                                                                <div class="column" style="display:table-cell; vertical-align:middle; width:70%">  
+                                                                    <div class="column-100" style="width:100%;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tr>
+                                                                                <td class="px-20" valign="top" style="padding:0 10px">
+                                                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:19px; font-weight:700; line-height:22px; padding:0; margin:0 0 10px;">
+                                                                                        The Philosopher in the Valley <br><span style="font-size:14px; font-style:italic; font-weight:400;">by Michael Steinberger</span>
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td align="right" valign="top" width="40" style="padding:5px 10px 0 0;">
+                                                                                    <a href="https://www.bookist.app/a/book/b7229843072?link_id={% cio_link_id %}" class="untracked" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-189728/1761490102631_buy_icon_01K8GFVVEWBBPZP1RKVJYB1N1T.png" alt="" width="40" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="px-20" colspan="2" style="padding:0 10px">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tr>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Business</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Science</td>
+                                                                                            <td width="8"></td>
+                                                                                            <td style="background:#ffffff; border-radius:50px; color:#252254; font-family:'Nunito Sans',sans-serif; font-size:10px; font-weight:400; line-height:10px; padding:0; margin:0;padding:5px 15px">Technology</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td class="px-20 pb-25" colspan="2" style="padding: 5px 10px 10px;">
+                                                                                    <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; font-style:italic; line-height:22px; padding:0; margin:10px 0 0 !important;">
+                                                                                        The story of Palantir Technologies - the most interesting company in the world - and the most controversial. Journalist Michael Steinberger is the first to tell the story of Alex Karp and Palantir from the beginning.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>                                         
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>                            
+
+                            <!-- Footer -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td style="background:#f6f6f6;">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td class="m-img" align="center" style="padding:0 0 20px">
+                                                    <a href="https://www.bookist.app/" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749563163280_footer__logo_01JXD1EGYZJCGQ090H6SNYDM6Z.png" alt="Bookist" width="600" style="border:0; display:block; height: auto;"></a>
+                                                </td>                                                            
+                                            </tr>
+
+                                            <tr>
+                                                <td  style="padding:0 0 40px;">
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="80%" style="margin:0 auto; max-width:400px;">            
+                                                        <tr>
+                                                            <td align="center" width="40">
+                                                                <a href="https://www.instagram.com/thebookistapp" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749563162194_insta__logo_01JXD1EFX6DS2BAS7T5FQ5CNVG.png" alt="Bookist" width="40" style="border:0; display:block; height: auto;"></a>
+                                                            </td> 
+                                                            <td style="color:#001620; font-family:'Nunito Sans',sans-serif; font-size:14px; line-height:140%; letter-spacing:-0.1px; padding:0 20px;">
+                                                                <p>
+                                                                    Follow us on instagram <br>for our takes on the book world's latest releases
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="background:#efefef; padding:20px">
+                                        <h4 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; line-height:20px; padding:0; margin:0;text-align:center">
+                                            Copyright © {{ "now" | date: "%Y" }}  Bookist. All rights reserved. <br>
+                                            You can update <a href="{% manage_subscription_preferences_url %}" target="_blank" style="color:#001620; text-decoration: underline;"><span>your preferences</span></a> or <a href="{% unsubscribe_url %}" target="_blank" style="color:#001620; text-decoration: underline;"><span>unsubscribe from this list.</span></a> 
+                                        </h4> 
+                                    </td>
+                                </tr>                              
+                                
+                            </table>
+                            <!--[if lte mso 15]></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
