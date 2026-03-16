@@ -24,7 +24,7 @@
     @media only screen and (max-width: 480px) {
     .container { width: 100% !important; }
     .column { display:block !important; width: 100% !important;}
-    .visible { display:block !important; width: 100% !important; visibility: visible !important;}
+    .visible { display:table-cell !important; width: 50% !important; visibility: visible !important;}
     .hidden { display:none !important; width: 100% !important; visibility:hidden !important; }
     .m-img img { width: 100% !important; max-width: 100% !important; margin:0 auto; height: auto !important; }
     .m-img-90 img { width: 90% !important; max-width: 90% !important; margin:0 auto; height: auto !important; }
@@ -111,10 +111,10 @@
                                                 <td class="column" width="66%">
                                                     <table border="0" cellspacing="0" cellpadding="0" width="100%">
                                                         <tr>
-                                                            <td class="m-img-90" align="center" style="padding:0 0 20px">
+                                                            <td class="m-img-90" align="center" width="50%" style="padding:0 0 20px">
                                                                 <a href="{{trigger.pick3_book_url}}" target="_blank"><img src="{{trigger.pick3_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
                                                             </td>
-                                                            <td class="visible m-img-90" align="center" style="display:none; visibility:hidden; padding:0 0 20px">
+                                                            <td class="visible m-img-90" align="center" width="50%" style="display:none; visibility:hidden; padding:0 0 20px">
                                                                 <a href="{{trigger.pick4_book_url}}" target="_blank"><img src="{{trigger.pick4_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
                                                             </td>
                                                         </tr>
