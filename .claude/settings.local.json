@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/Andrew/Documents/Newsletters/202604 Apr\")",
+      "Bash(cp \"/Users/Andrew/Documents/Newsletters/202603 Mar/MARCH_2026.html\" \"/Users/Andrew/Documents/Newsletters/202604 Apr/APRIL_2026.html\")"
+    ]
+  }
+}
