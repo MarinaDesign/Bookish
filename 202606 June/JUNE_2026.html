@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting"> 
+<!-- <title>{{message.subject}}</title> -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+</style>
+
+<style>            
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100% }
+    table { border-collapse: collapse !important; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+    p {margin: 0px !important; padding:0px !important;}
+    a:hover, a img:hover {cursor: pointer !important}
+
+    @media only screen and (max-width: 480px) {
+    .container { width: 100% !important; }
+    .column { display:block !important; width: 100% !important;}
+    .visible { display:table-cell !important; width: 50% !important; visibility: visible !important;}
+    .hidden { display:none !important; width: 100% !important; visibility:hidden !important; }
+    .m-img img { width: 100% !important; max-width: 100% !important; margin:0 auto; height: auto !important; }
+    .m-img-90 img { width: 90% !important; max-width: 90% !important; margin:0 auto; height: auto !important; }
+    .footer p, h4, li { font-size: 13px !important; line-height:20px !important;}
+    }
+</style>
+<!--[if mso]> <style>h1,h2,h3,h4,li,p,a { font-family: sans-serif !important; } </style> <![endif]-->
+<!--[if mso]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important; background-color:#efefef;">
+    <!-- Preheader Section -->
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+        &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+    </div>
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <table bgcolor="#ffffff" class="container" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; margin:0 auto">
+                    <tr>
+                        <td>
+                            <!--[if lte mso 15]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]-->
+                                
+                            <!-- logo -->
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="margin:0 auto;">
+                                <tr>
+                                    <td class="m-img" align="center" style="padding:0;">
+                                        <a href="https://www.bookist.app/" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749582175306_loho_01JXDKJQMJ6FYWEC8E6EENXGDZ.png" alt="Bookist" width="600" style="border:0; display:block; height:auto; margin:0 auto;"></a>
+                                    </td>
+                                </tr>   
+                            </table>
+                            
+                            <!-- main-->
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="95%" style="margin:0 auto;">
+                                <tr>
+                                    <td style="padding:20px 20px 0; text-align:center;">
+                                        <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; margin:0; padding:0;">
+                                            HI {{trigger.user_name}}
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:30px 20px">                                        
+                                        <h1 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:26px; font-weight:700; line-height:26px; margin:0px; padding:0; text-align:center;">
+                                            Your top recommendation
+                                        </h1>                                           
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="m-img-90" align="center" style="padding:0 0 50px">
+                                        <a href={{trigger.top_pick_book_url}} target="_blank"><img  src="{{trigger.top_pick_image_url}}" alt="" width="320" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                    </td>
+                                </tr>   
+                            </table>
+
+                            <!-- Top picks for you -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td style="padding:0 20px 30px">                                        
+                                        <h1 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:26px; font-weight:700; line-height:26px; padding:0; margin:0; text-align:center">
+                                            Top picks for you
+                                        </h1>                                           
+                                    </td>
+                                </tr>  
+
+                                <!-- #1 -->
+                                <tr>
+                                    <td align="center">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="90%" style="margin:0 auto;">
+                                            <tr>
+                                                <td class="column" width="66%">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                        <tr>
+                                                            <td class="m-img-90" align="center" width="50%" style="padding:0 0 20px">
+                                                                <a href="{{trigger.pick1_book_url}}" target="_blank"><img src="{{trigger.pick1_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                                            </td>
+                                                            <td class="m-img-90" align="center" width="50%" style="padding:0 0 20px">
+                                                                <a href="{{trigger.pick2_book_url}}" target="_blank"><img src="{{trigger.pick2_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="column" width="66%">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                        <tr>
+                                                            <td class="m-img-90" align="center" width="50%" style="padding:0 0 20px">
+                                                                <a href="{{trigger.pick3_book_url}}" target="_blank"><img src="{{trigger.pick3_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                                            </td>
+                                                            <td class="visible m-img-90" align="center" width="50%" style="display:none; visibility:hidden; padding:0 0 20px">
+                                                                <a href="{{trigger.pick4_book_url}}" target="_blank"><img src="{{trigger.pick4_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- #2 -->
+                                <tr>
+                                    <td align="center" style="padding:0 0 20px">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="90%" style="margin:0 auto;">
+                                            <tr>
+                                                <td class="hidden" width="33%">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" style="padding:0 0 20px">
+                                                                <a href="{{trigger.pick4_book_url}}" target="_blank"><img src="{{trigger.pick4_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="column" width="66%">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                        <tr>
+                                                            <td class="m-img-90" align="center" width="50%" style="padding:0 0 20px">
+                                                                <a href="{{trigger.pick5_book_url}}" target="_blank"><img src="{{trigger.pick5_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                                            </td>
+                                                            <td class="m-img-90" align="center" width="50%" style="padding:0 0 20px">
+                                                                <a href="{{trigger.pick6_book_url}}" target="_blank"><img src="{{trigger.pick6_image_url}}" alt="" width="160" style="border:0; display:block; height: auto; border-radius:8px;" /></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- New App Features -->
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="95%" style="margin:0 auto;">
+                                <tr>
+                                    <td style="padding:20px">                                        
+                                        <h1 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:26px; font-weight:700; line-height:26px; margin:0 0 10px; padding:0; text-align:center">
+                                            New App Features
+                                        </h1>      
+                                        
+                                        <p style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:700; line-height:26px; padding:0; text-align:center">
+                                            We're excited to announce the following new features in Bookist
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center" style="padding:0 0 50px">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="85%" >
+                                            <tr>
+                                                <td style="background:#f6f6f6; border-radius:10px; padding:30px;">
+                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:26px; padding:0; margin:0;">
+                                                        <span style="font-size:18px; font-weight:700;">1.  Quarter-Star Ratings</span><br><span style="color:#252254; font-size:16px; font-weight:400;"> Ever rounded a book up to 4 stars when it really deserved a 3.75? From next week, our new rating slider lets you score any book in increments of 0.25 — from 2.5 right up to 3.75 and beyond. No more rounding up or down for a rating that doesn't quite fit. Look out for the slider in your app soon.</span>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr><td height="20"></td></tr>
+
+                                            <tr>
+                                                <td style="background:#f6f6f6; border-radius:10px; padding:30px;">
+                                                    <h3 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:16px; font-weight:400; line-height:26px; padding:0; margin:0;">
+                                                        <span style="font-size:18px; font-weight:700;">2.  Browse Your Favourite Genres</span><br><span style="color:#252254; font-size:16px; font-weight:400;"> Genre tags are now clickable. Tap one and you'll land on a screen built just for that genre — swipe through books exclusively from it, or browse curated carousels like Popular, Classics and Hidden Gems. It's the easiest way to fall down a genre rabbit hole and come up with your next favourite read.</span>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            
+                            <!-- Footer -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td style="background:#f6f6f6;">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td class="m-img" align="center" style="padding:0 0 20px">
+                                                    <a href="https://www.bookist.app/" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749563163280_footer__logo_01JXD1EGYZJCGQ090H6SNYDM6Z.png" alt="Bookist" width="600" style="border:0; display:block; height: auto;"></a>
+                                                </td>                                                            
+                                            </tr>
+
+                                            <tr>
+                                                <td  style="padding:0 0 40px;">
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="80%" style="margin:0 auto; max-width:400px;">            
+                                                        <tr>
+                                                            <td align="center" width="40">
+                                                                <a href="https://www.instagram.com/thebookistapp" target="_blank"><img src="https://userimg-assets-eu.customeriomail.com/images/client-env-135568/1749563162194_insta__logo_01JXD1EFX6DS2BAS7T5FQ5CNVG.png" alt="Bookist" width="40" style="border:0; display:block; height: auto;"></a>
+                                                            </td> 
+                                                            <td style="color:#001620; font-family:'Nunito Sans',sans-serif; font-size:14px; line-height:140%; letter-spacing:-0.1px; padding:0 20px;">
+                                                                <p>
+                                                                    Follow us on instagram <br>for our takes on the book world's latest releases
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="background:#efefef; padding:20px">
+                                        <h4 style="color:#252254; font-family:'Nunito Sans',sans-serif; font-size:14px; font-weight:400; line-height:20px; padding:0; margin:0;text-align:center">
+                                            Copyright © {{ "now" | date: "%Y" }}  Bookist. All rights reserved. <br>
+                                            You can update <a href="{% manage_subscription_preferences_url %}" target="_blank" style="color:#001620; text-decoration: underline;"><span>your preferences</span></a> or <a href="{% unsubscribe_url %}" target="_blank" style="color:#001620; text-decoration: underline;"><span>unsubscribe from this list.</span></a> 
+                                        </h4> 
+                                    </td>
+                                </tr> 
+                            </table>
+                            <!--[if lte mso 15]></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
